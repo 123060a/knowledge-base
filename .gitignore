@@ -1,0 +1,15 @@
+# ---- 编译产物（Maven 生成的，不该进仓库）----
+target/
+*.class
+
+# ---- IDEA 的本地配置（每个人不一样，不该进仓库）----
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ---- 系统 / 编辑器文件 ----
+.DS_Store
+Thumbs.db
+*.log
