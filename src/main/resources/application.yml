@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: knowledge-base
+
+  # 数据源配置：Spring Boot 看到 jdbc starter + MySQL 驱动，就会按这里的配置自动建连接池
+  datasource:
+    url: "jdbc:mysql://127.0.0.1:3306/kb?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true"
+    username: ${DB_USERNAME:root}
+    # 密码不写在这里！用环境变量 DB_PASSWORD 传入，避免被提交到公开仓库
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver

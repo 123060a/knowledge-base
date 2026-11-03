@@ -32,6 +32,12 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <!-- 数据库能力：有了它，Spring Boot 才会自动创建连接池和 JdbcTemplate -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+
     <!-- MySQL 驱动：版本由 Spring Boot 管理，不用手写 -->
     <dependency>
       <groupId>com.mysql</groupId>
